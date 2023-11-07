@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1a01e917c8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <title>CoffeBlend</title>
+  </head>
+
+  <header class="header">
+    <!-- LOGO -->
+    <div class="container">
+      <p>
+        <a
+          ><span class="flogo">COFFEE</span
+          ><span class="slogo">B L E N D</span></a
+        >
+      </p>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="navbarmain">
+          <ul class="sidebar">
+            <li onclick="hideSidebar()" class="shopItem"><a href="#"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></a></li>
+            <li class="navItem"><a href="#">HOME</a></li>
+            <li class="navItem"><a href="#">MENU</a></li>
+            <li class="navItem"><a href="#">SERVICES</a></li>
+            <li class="navItem"><a href="#">BLOG</a></li>
+            <li class="navItem"><a href="#">ABOUT</a></li>
+            <li class="navItem">
+              <a href="#">SHOP <i class="fa-sharp fa-solid fa-caret-down fa-xs" style="color: #ffffff;"></i></a>
+              <ul id="submenu">
+                <li class="shopItem"><a href="#">Shop</a></li>
+                <li class="shopItem"><a href="#">Single Product</a></li>
+                <li class="shopItem"><a href="#">Cart</a></li>
+                <li class="shopItem"><a href="#">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="navItem"><a href="#">CONTACT</a></li>
+            <li class="navItem">
+              <a href="#">
+                <i
+                  class="fa-sharp fa-solid fa-cart-shopping fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="navList">
+            <li class="navItem hide"><a href="#">HOME</a></li>
+            <li class="navItem hide"><a href="#">MENU</a></li>
+            <li class="navItem hide"><a href="#">SERVICES</a></li>
+            <li class="navItem hide"><a href="#">BLOG</a></li>
+            <li class="navItem hide"><a href="#">ABOUT</a></li>
+            <li class="navItem hide">
+              <a href="#">SHOP <i class="fa-sharp fa-solid fa-caret-down fa-xs" style="color: #ffffff;"></i></a>
+              <ul id="submenu">
+                <li class="shopItem"><a href="#">Shop</a></li>
+                <li class="shopItem"><a href="#">Single Product</a></li>
+                <li class="shopItem"><a href="#">Cart</a></li>
+                <li class="shopItem"><a href="#">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="navItem hide"><a href="#">CONTACT</a></li>
+            <li class="navItem hide">
+              <a href="#">
+                <i
+                  class="fa-sharp fa-solid fa-cart-shopping fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </a>
+            </li>
+            <li onclick="showSidebar()" class="shopItem menu-button"><a href="#"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- MENU SCRIPT -->
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display ='flex';
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display ='none';
+        }
+      </script>
+    </div>
+  </header>
+  <body>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="fade" data-aos="fade-up">
+          <div class="container">
+            <h1>Welcome</h1>
+            <h2>CREAMY HOT AND READY TO<br>SERVE</h2>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+          </div>
+          <div class="btndiv">
+            <button id="herobtn1" class="herobtn">Order Now</button>
+            <button id="herobtn2" class="herobtn">View Menu</button>
+          </div>
+        </div>
+      </section>
+      <!-- placename -->
+      <section class="placement">
+        <div class="container">
+          <!-- phone -->
+            <div class="piece first" data-aos="fade-up">
+              <div class="left">
+                <i class="fa-sharp fa-solid fa-phone fa-xl" style="color: #c49b63;"></i>
+              </div>
+              <div class="right">
+                <div>000 (123) 456 7890</div>
+                <div class="bottom">A small river named Duden flows by their place and supplies.</div>
+              </div>
+            </div>
+          <!-- bullet -->
+            <div class="piece" data-aos="fade-up">
+              <div class="left">
+                <i class="fa-sharp fa-solid fa-phone fa-xl" style="color: #c49b63;"></i>
+              </div>
+              <div class="right">
+                <div>198 West 21th Street</div>
+                <div class="bottom">203 Fake St. Mountain View, San Francisco, California, USA</div>
+              </div>
+            </div>
+          <!-- time -->
+            <div class="piece" data-aos="fade-up">
+              <div class="left th">
+                <i class="fa-sharp fa-solid fa-phone fa-xl" style="color: #c49b63;"></i>
+              </div>
+              <div class="right">
+                <div>Open Monday-Friday</div>
+                <div class="bottom">8:00am - 9:00pm</div>
+              </div>
+            </div>
+
+          <!-- LOG IN -->
+          <div class="login">
+            <div class="logtop">
+              <h4>BOOK A TABLE</h4>
+            </div>
+            <div class="logname">
+              <div class="border logfirst">
+                <p>First Name</p>
+              </div>
+              <div class="border loglast">
+                <p>Last Name</p>
+              </div>
+            </div>
+            <div class="logsecond">
+              <div class="border logdate">
+                <p>Date</p> <i class="fa-regular fa-calendar-days fa-lg" style="color: #ffffff;"></i>
+              </div>
+              <div class="border logtime">
+                <p>Time</p> <i class="fa-regular fa-clock fa-lg" style="color: #ffffff;"></i>
+              </div>
+              <div class="border logphone">
+                <p>Phone</p>
+              </div>
+            </div>
+            <div class="logbottom">
+              <div class="border logmessage">
+                <p>Message</p>
+              </div>
+              <div class="logappointment">
+                <button class="appointment">
+                  Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <!-- DISCOVER -->
+      <section class="discover">
+        <div class="container">
+          <div class="img"></div>
+          <div class="blackback"></div>
+          <div class="story" data-aos="fade-up">
+            <h5>Discover</h5>
+            <h4>OUR STORY</h4>
+            <p>On her way she met a copy.
+              The copy warned the Little Blind Text,
+              that where it came from it
+              would have been rewritten a thousand
+              times and everything that was left from
+              its origin would be the word "and"
+              and the Little Blind Text should turn
+              around and return to its own, safe
+              country. But nothing the copy said
+              could convince her and so it didn't
+              take long until a few insidious Copy
+              Writers ambushed her, made her drunk 
+              with Longe and Parole and dragged her 
+              into their agency, where they abused 
+              her for their.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- COFFEE COLOR -->
+      <section class="coffeecolor">
+        <div class="container">
+          <div class="order" data-aos="fade-up">
+            <div class="box">
+              <img src="/assets/images/choices (2).png" alt="order">
+            </div>
+            <div class="head">
+              <h3>
+                EASY TO ORDER
+              </h3>
+            </div>
+            <div class="text">
+              <p>
+                Even the all-powerful Pointing 
+                has no control about the blind 
+                texts it is an almost unorthographic.
+              </p>
+            </div>
+          </div>
+          <div class="order" data-aos="fade-up">
+            <div class="box">
+              <img src="/assets/images/fast-delivery (1).png" alt="">
+            </div>
+            <div class="head">
+              <h3>
+                FASTEST DELIVERY
+              </h3>
+            </div>
+            <div class="text">
+              <p>
+                Even the all-powerful Pointing 
+                has no control about the blind 
+                texts it is an almost unorthographic
+              </p>
+            </div>
+          </div>
+          <div class="order" data-aos="fade-up">
+            <div class="box">
+              <img src="/assets/images/coffee-beans (1).png" alt="">
+            </div>
+            <div class="head">
+              <h3>
+                QUALITY COFFEE
+              </h3>
+            </div>
+            <div class="text">
+              <p>
+                Even the all-powerful Pointing 
+                has no control about the blind 
+                texts it is an almost unorthographic
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MENU -->
+      <section class="menu">
+        <div class="container">
+          <div class="both">
+              <div class="menuplace" data-aos="fade-up">
+                <h5>Discover</h5>
+                <h4>OUR MENU</h4>
+                <p>Far far away, behind the word mountains, 
+                  far from the countries Vokalia and 
+                  Consonantia, there live the blind texts. 
+                  Separated they live in Bookmarksgrove right 
+                  at the coast of the Semantics, a 
+                  large language ocean.
+                </p>
+                <button class="fullmenu">View Full Menu</button>
+              </div>
+            <div class="imagesdiv" data-aos="fade-up">
+              <div class="pic" id="pic1"><img src="/assets/images/menu-1.jpg" alt="coffee picture"></div>
+              <div class="pic" id="pic2"><img src="/assets/images/menu-2.jpg" alt="coffee picture"></div>
+              <div class="pic" id="pic3"><img src="/assets/images/menu-3.jpg" alt="coffee picture"></div>
+              <div class="pic" id="pic4"><img src="/assets/images/menu-4.jpg" alt="coffee picture"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- slowback -->
+      <section class="slowback">
+        <div class="container">
+          <div class="cups">
+            <div class="nums" id="cup1">
+              <div class="imgdv">
+                <img src="/assets/images/coffee-cup.png" alt="coffee cup">
+              </div>
+              <div class="num" data-goal="10">0</div>
+              <div>
+                <p>Coffee Branches</p>
+              </div>
+            </div>
+            <div class="nums" id="cup2">
+              <div class="imgdv">
+                <img src="/assets/images/coffee-cup.png" alt="coffee cup">
+              </div>
+              <div class="num" data-goal="15">0</div>
+              <div>
+                <p>Number of Awards</p>
+              </div>
+            </div>
+            <div class="nums" id="cup3">
+              <div class="imgdv">
+                <img src="/assets/images/coffee-cup.png" alt="coffee cup">
+              </div>
+              <div class="num" data-goal="1057">0</div>
+              <div>
+                <p>Happy Customer</p>
+              </div>
+            </div>
+            <div class="nums" id="cup4">
+              <div class="imgdv">
+                <img src="/assets/images/coffee-cup.png" alt="coffee cup">
+              </div>
+              <div class="num" data-goal="90">0</div>
+              <div>
+                <p>Staff</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SELLERS -->
+      <section class="sellers">
+        <div class="container">
+          <div class="texttop">
+            <h5>Discover</h5>
+            <h4>BEST COFFEE SELLERS</h4>
+            <p>Far far away, behind the word mountains, 
+              far from the countries Vokalia and 
+              Consonantia, there live the blind texts.</p>
+          </div>
+          <div class="allpics">
+            <div class="pictures">
+              <img src="/assets/images/menu-1.jpg" alt="coffee picture">
+              <h3>COFFEE CAPUCCINO</h3>
+              <p>A small river named Duden flows 
+                by their place and supplies</p>
+              <h4>$5.90</h4>
+              <button>Add to Cart</button>
+            </div>
+            <div class="pictures">
+              <img src="/assets/images/menu-2.jpg" alt="coffee picture">
+              <h3>COFFEE CAPUCCINO</h3>
+              <p>A small river named Duden flows 
+                by their place and supplies</p>
+              <h4>$5.90</h4>
+              <button>Add to Cart</button>
+            </div>
+            <div class="pictures">
+              <img src="/assets/images/menu-3.jpg" alt="coffee picture">
+              <h3>COFFEE CAPUCCINO</h3>
+              <p>A small river named Duden flows 
+                by their place and supplies</p>
+              <h4>$5.90</h4>
+              <button>Add to Cart</button>
+            </div>
+            <div class="pictures">
+              <img src="/assets/images/menu-4.jpg" alt="coffee picture">
+              <h3>COFFEE CAPUCCINO</h3>
+              <p>A small river named Duden flows 
+                by their place and supplies</p>
+              <h4>$5.90</h4>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="placesall">
+        <div class="container">
+          <div class="place">
+            <img src="/assets/images/gallery-1.jpg" alt="place">
+          </div>
+          <div class="place">
+            <img src="/assets/images/gallery-2.jpg" alt="place">
+          </div>
+          <div class="place">
+            <img src="/assets/images/gallery-3.jpg" alt="place">
+          </div>
+          <div class="place">
+            <img src="/assets/images/gallery-4.jpg" alt="place">
+          </div>
+        </div>
+      </section>
+      <!-- OUR PRODUCS -->
+      <section class="ourproducs">
+        <div class="container">
+          <div class="combined">
+              <div class="infotop" data-aos="fade-up">
+                <h3>Discover</h3>
+                <h4>OUR PRODUCTS</h4>
+                <p>Far far away, behind the word 
+                  mountains, far from the countries 
+                  Vokalia and Consonantia, there live 
+                  the blind texts.
+                </p>
+              </div>
+              <div class="productmenu">
+                <div class="buttons" data-aos="fade-up">
+                  <button class="buttontop" id="btn1">Main Dish</button>
+                  <button class="buttontop" id="btn2">Drinks</button>
+                  <button class="buttontop" id="btn3">Desserts</button>
+                </div>
+                <div class="menu" data-aos="fade-up">
+                  <div class="menulittle" id="menu1">
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/dish-1.jpg" alt="grilled beef">
+                      </div>
+                      <h4>GRILLED BEEF</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/dish-2.jpg" alt="grilled beef">
+                      </div>
+                      <h4>GRILLED BEEF</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/dish-3.jpg" alt="grilled beef">
+                      </div>
+                      <h4>GRILLED BEEF</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                  </div> 
+                  <div class="menulittle" id="menu2">
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/drink-1.jpg" alt="LEMONADE JUICE">
+                      </div>
+                      <h4>LEMONADE JUICE</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                    <button>Add to cart</button>
+                    </div>
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/drink-2.jpg" alt="PINEAPPLE JUICE">
+                      </div>
+                      <h4>PINEAPPLE JUICE</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/drink-3.jpg" alt="SODA DRINKS">
+                      </div>
+                      <h4>SODA DRINKS</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                  </div>
+                  <div class="menulittle" id="menu3">
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/dessert-1.jpg" alt="HOT CAKE HONEY">
+                      </div>
+                      <h4>HOT CAKE HONEY</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/dessert-2.jpg" alt="HOT CAKE HONEY">
+                      </div>
+                      <h4>HOT CAKE HONEY</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                    <div class="food">
+                      <div class="pic">
+                        <img src="/assets/images/dessert-3.jpg" alt="HOT CAKE HONEY">
+                      </div>
+                      <h4>HOT CAKE HONEY</h4>
+                      <p>Far far away, behind the word 
+                        mountains, far from the countries 
+                        Vokalia and Consonantia.
+                      </p>
+                      <h5>$2.90</h5>
+                      <button>Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CUSTOMER SAYS -->
+      <section class="customer">
+        <div class="container">
+          <div class="says" data-aos="fade-up">
+            <h4>Testimony</h4>
+            <h3>CUSTOMERS SAYS</h3>
+            <p>
+              Far far away, behind the word mountains, 
+              far from the countries Vokalia and 
+              Consonantia, there live the blind texts.
+            </p>
+          </div>
+          <div class="whatsay">
+            <div class="whattext" id="light" data-aos="fade-up">
+              <p class="mm">
+                “Even the all-powerful Pointing 
+                has no control about the blind 
+                texts it is an almost unorthographic 
+                life One day however a small.”
+              </p>
+              <div class="infoperson">
+                <div class="person">
+                  <img src="/assets/images/person-1.jpeg" alt="Person picture">
+                </div>
+                <div class="personabout">
+                  <h5>Maqabond</h5>
+                  <p>Illustrator Designer</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="whattext" id="dark">
+              <p class="mm">
+                “Even the all-powerful Pointing 
+                has no control about the blind 
+                texts it is an almost unorthographic 
+                life One day however a small line of 
+                blind text by the name of Lorem 
+                Ipsum decided to leave for the far 
+                World of Grammar.”
+              </p>
+              <div class="infoperson">
+                <div class="person">
+                  <img src="/assets/images/person-2.jpeg" alt="Person picture">
+                </div>
+                <div class="personabout">
+                  <h5>Omar</h5>
+                  <p>Illustrator Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="whattext" id="light" data-aos="fade-up">
+              <p class="mm">
+                “Even the all-powerful Pointing 
+                has no control about the blind texts 
+                it is an almost unorthographic life 
+                One day however a small line of blind 
+                text by the name. ”
+              </p>
+              <div class="infoperson">
+                <div class="person">
+                  <img src="/assets/images/person-3.jpeg" alt="Person picture">
+                </div>
+                <div class="personabout">
+                  <h5>Amza</h5>
+                  <p>Illustrator Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="whattext" id="dark">
+              <p class="mm">
+                “Even the all-powerful Pointing has 
+                no control about the blind texts 
+                it is an almost unorthographic life 
+                One day however.”
+              </p>
+              <div class="infoperson">
+                <div class="person">
+                  <img src="/assets/images/person-4.jpeg" alt="Person picture">
+                </div>
+                <div class="personabout">
+                  <h5>FAnar</h5>
+                  <p>Illustrator Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="whattext" id="light" data-aos="fade-up">
+              <p class="mm">
+                “Even the all-powerful Pointing has 
+                no control about the blind texts it is 
+                an almost unorthographic life One day 
+                however a small line of blind text by the name. ”
+              </p>
+              <div class="infoperson">
+                <div class="person">
+                  <img src="/assets/images/person-5.jpeg" alt="Person picture">
+                </div>
+                <div class="personabout">
+                  <h5>Qara</h5>
+                  <p>Illustrator Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BLOG -->
+      <section class="fromblog">
+        <div class="container">
+          <div class="topblog" data-aos="fade-up">
+            <div class="topblogtext">
+              <h2>RECENT FROM BLOG</h2>
+              <p>
+                Far far away, behind the word mountains, 
+                far from the countries Vokalia and 
+                Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+          <div class="infoblogall">
+            <div class="infoblog" data-aos="fade-up">
+              <div class="blogpicpart">
+                <a href="#">
+                  <img src="/assets/images/image_1.jpg" alt="delicious pizza">
+                </a>
+                <div class="blogdate">
+                  <a href="#">Sept 10, 2018</a>
+                  <a href="#">Admin</a>
+                </div>
+                <div class="blogbottom">
+                  <h3>The Delicious Pizza</h3>
+                  <p>
+                    A small river named Duden flows by 
+                    their place and supplies it with 
+                    the necessary regelialia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="infoblog" data-aos="fade-up">
+              <div class="blogpicpart">
+                <a href="#">
+                  <img src="/assets/images/image_2.jpg" alt="delicious pizza">
+                </a>
+                <div class="blogdate">
+                  <a href="#">Sept 10, 2018</a>
+                  <a href="#">Admin</a>
+                </div>
+                <div class="blogbottom">
+                  <h3>The Delicious Pizza</h3>
+                  <p>
+                    A small river named Duden flows by 
+                    their place and supplies it with 
+                    the necessary regelialia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="infoblog" data-aos="fade-up">
+              <div class="blogpicpart">
+                <a href="#">
+                  <img src="/assets/images/image_3.jpg" alt="delicious pizza">
+                </a>
+                <div class="blogdate">
+                  <a href="#">Sept 10, 2018</a>
+                  <a href="#">Admin</a>
+                </div>
+                <div class="blogbottom">
+                  <h3>The Delicious Pizza</h3>
+                  <p>
+                    A small river named Duden flows by 
+                    their place and supplies it with 
+                    the necessary regelialia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MAP PART -->
+      <section class="map">
+        <div class="container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.452471389358!2d49.84910467548093!3d40.376663358077785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da84d07764f%3A0xabaa0431ef903b77!2sFrench-Azerbaijani%20University!5e0!3m2!1sen!2saz!4v1698648252876!5m2!1sen!2saz" width="50%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="btnpart">
+          <!-- LOG IN -->
+            <div class="login-scn">
+              <div class="logtop-scn">
+                <h4>Book a Table</h4>
+              </div>
+              <div class="logname-scn">
+                <div class="border-scn logfirst-scn">
+                  <p>First Name</p>
+                </div>
+                <div class="border-scn loglast-scn">
+                  <p>Last Name</p>
+                </div>
+              </div>
+              <div class="logsecond-scn">
+                <div class="border-scn logdate-scn">
+                  <p>Date</p> <i class="fa-regular fa-calendar-days fa-lg" style="color: #ffffff;"></i>
+                </div>
+                <div class="border-scn logtime-scn">
+                  <p>Time</p> <i class="fa-regular fa-clock fa-lg" style="color: #ffffff;"></i>
+                </div>
+                <div class="border-scn logphone-scn">
+                  <p>Phone</p>
+                </div>
+              </div>
+              <div class="logbottom-scn">
+                <div class="border-scn logmessage-scn">
+                  <p>Message</p>
+                </div>
+                <div class="logappointment-scn">
+                  <button class="appointment-scn">
+                    Appointment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="final">
+        <div class="container">
+          <div class="finaltop">
+            <!-- ABOUT -->
+            <div class="finalabout">
+              <h3>ABOUT US</h3>
+              <p>
+                Far far away, behind the word mountains, 
+                far from the countries Vokalia and 
+                Consonantia, there live the blind texts.
+              </p>
+              <div class="icons">
+                <div class="icondiv" data-aos="fade-up"><a href="https://twitter.com/CommonLW" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a></div>
+                <div class="icondiv" data-aos="fade-up"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></div>
+                <div class="icondiv" data-aos="fade-up"><a href="https://www.instagram.com/nrzdhmz/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a></div>
+              </div>
+            </div>
+            <!-- RECENT -->
+            <div class="finalrecent">
+              <h3>RECENT BLOG</h3>
+              <div class="recentpic">
+                <div class="image">
+                  <img src="/assets/images/image_1.jpg" alt="makaronni">
+                </div>
+                <div class="recenttext">
+                  <h5>
+                    Even the all-powerful Pointing has no control about
+                  </h5>
+                  <div class="recentdate">
+                    <a href="#"><i class="fa-regular fa-calendar-days" style="color: #ffffff8e;"></i>Sept 15, 2023</a>
+                    <a href="#"><i class="fa-solid fa-user" style="color: #ffffff8e;"></i>Admin</a>
+                  </div>
+                </div>
+              </div>
+              <div class="recentpic">
+                <div class="image">
+                  <img src="/assets/images/image_2.jpg" alt="makaronni">
+                </div>
+                <div class="recenttext">
+                  <h5>
+                    Even the all-powerful Pointing has no control about
+                  </h5>
+                  <div class="recentdate">
+                    <a href="#"><i class="fa-regular fa-calendar-days" style="color: #ffffff8e;"></i>Sept 15, 2023</a>
+                    <a href="#"><i class="fa-solid fa-user" style="color: #ffffff8e;"></i>Admin</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SERVICE -->
+            <div class="finalservice">
+              <h3>SERVICES</h3>
+              <div class="servicesall">
+                <p>Cooked</p>
+                <p>Deliver</p>
+                <p>Quality</p>
+                <p>Mixed</p>
+              </div>
+            </div>
+            <!-- QUESTION -->
+            <div class="finalquestion">
+              <h3>HAVE A QUESTION?</h3>
+              <div class="questionall">
+                <div class="quest">
+                  <i class="fa-solid fa-location-dot fa-lg" style="color: #c7c7c7;"></i>
+                  <a href="https://maps.app.goo.gl/diHpCeK8MPxonZsC6" target="_blank">Azerbaijan, Baku, Asiq Molla Cuma Street 1969, house 20, app 18</a>
+                </div>
+                <div class="quest">
+                  <i class="fa-solid fa-phone fa-lg" style="color: #c7c7c7;"></i>
+                  <a href="tel:+994509818647">+994 50 981 86 47</a>
+                </div>
+                <div class="quest">
+                  <i class="fa-solid fa-envelope fa-lg" style="color: #c7c7c7;"></i>
+                  <a href="mailto:nuruzadahamza@gmail.com">nuruzadahamza@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BOTTOM -->
+          <div class="finalbottom">
+            <p>Copyright This template is made with by @nrzdhmz</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
